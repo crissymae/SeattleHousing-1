@@ -34,19 +34,19 @@ Finally, we rid our data of some variables that are outside the scope of this pr
 
 ## Start Modeling
 
-![model1](images/firstmodel.png)
+![model1](Images/firstmodel.png)
 
 A few notes: Our R-squared is relatively low, but our Adjusted R-squared is very high relative. Our condition number is high, which implies high collinearity, or conflicting variables. Our p-scores are generally very good, with one glaring exception. This needs further investigation.
 
 ## Further Investigation
 
-![heatmap](images/heatmap.png)
+![heatmap](Images/heatmap.png)
 
 Heatmap to check collinearity. As highlighted, there seems to be large collinearity between the square footage above a basement area and square footage of the living space. This makes a lot of sense. As the information is redundant, we drop the square footage above basement data.
 
 Next we create scatter plots of our remaining variables.
 
-![scatterplots](images/scatter.png)
+![scatterplots](Images/scatter.png)
 
 After analyzing the scatterplots, we log transform to normalize the square footage of the lot variable. We also find a home with 33 bedrooms, a clear outlier that is skewing our data. We drop that home too.
 
@@ -56,7 +56,7 @@ After some trial and error, we came to the conclusion that what's best for our m
 
 ## Our Final Model
 
-![finalmodel](images/FinalModel.png)
+![finalmodel](Images/FinalModel.png)
 
 Our R-squared is 0.404, which is lower than we would like it to be. Adjusted R-squared is very high relative, which tells us that the variables we've chosen all contribute significantly, and don't conflict much. 5 of our 9 variables chosen for this model were created for this project using the supplied King County housing data, while 4 were taken from the data itself. Our p-values all look good.
 
