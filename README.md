@@ -16,7 +16,7 @@ In total, our revised dataset contained 19688 data points with prices between $7
 
 Let's take a closer look at our home prices.
 
-![price](Images/logtransform.png)
+![price](Images/LogPrice.png)
 
  The first image is a histogram visualizing our distribution of homes based on their price. In order to fit better to our modeling process, we prefer to see a normal curve for our price distribution. By changing our price values to their logarithm, we maintain their relative value while transforming their distribution to a smoother, normalized curve.
 
@@ -26,6 +26,12 @@ Two variables in particular stood out under our analysis. One measured the squar
 
 The other variable we felt needed immediate work was the 'Waterfront' property. This measured whether or not a home was a waterfront property. The main issue was how many instances of homes in our data had unavailable information for this property. 
 
-!images/latlong.png
+![waterfront]images/latlong.png
 
 Here we plot all of our properties by latitude and longitude, making a map of King County. We color in our properties that have missing information in their 'Waterfront' description. Inspecting the map, we see no pattern in how these properties are distributed. We made the decision to turn all our missing values to NOT being waterfront properties. The map shows us that a small percentage of the missing properties are likely waterfront, and the missing data represents a small percentage of our total dataset. We are introducing some error into our model, but relatively small for what we determined was a likely important factor. This point could be retouched on in the future.
+
+Finally, we rid our data of some variables that are outside the scope of this project. Latitude, longitude, zipcode, id, etc.
+
+## Start Modeling
+
+![model1](Images/firstmodel.png)
