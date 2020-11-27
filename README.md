@@ -16,7 +16,7 @@ In total, our revised dataset contained 19688 data points with prices between $7
 
 Let's take a closer look at our home prices.
 
-![price](images/LogPrice.png)
+![price](Images/LogPrice.png)
 
  The first image is a histogram visualizing our distribution of homes based on their price. In order to fit better to our modeling process, we prefer to see a normal curve for our price distribution. By changing our price values to their logarithm, we maintain their relative value while transforming their distribution to a smoother, normalized curve.
 
