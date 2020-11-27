@@ -26,7 +26,7 @@ Two variables in particular stood out under our analysis. One measured the squar
 
 The other variable we felt needed immediate work was the 'Waterfront' property. This measured whether or not a home was a waterfront property. The main issue was how many instances of homes in our data had unavailable information for this property. 
 
-![waterfront]images/latlong.png
+![waterfront](Images/latlong.png)
 
 Here we plot all of our properties by latitude and longitude, making a map of King County. We color in our properties that have missing information in their 'Waterfront' description. Inspecting the map, we see no pattern in how these properties are distributed. We made the decision to turn all our missing values to NOT being waterfront properties. The map shows us that a small percentage of the missing properties are likely waterfront, and the missing data represents a small percentage of our total dataset. We are introducing some error into our model, but relatively small for what we determined was a likely important factor. This point could be retouched on in the future.
 
